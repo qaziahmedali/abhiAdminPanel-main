@@ -1,0 +1,76 @@
+@import "../fonts/stylesheet.css";
+
+* {
+	box-sizing: border-box;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+	outline: none;
+}
+
+html {
+	font-family: sans-serif;
+}
+:root {
+	--primary: #f7b445;
+}
+
+body {
+	font-size: 16px;
+	margin: 0;
+	background-color: #f6fffc !important;
+	font-family: "IBMPlexSans-Regular";
+	/* overflow: overlay; */
+	height: 100vh;
+	/* overflow: hidden; */
+}
+
+::selection {
+	background: var(--primary) !important;
+	color: rgb(48, 48, 48);
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #c4c2bf;
+
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--primary);
+}
+
+/* width */
+.styleScroll::-webkit-scrollbar {
+	width: 4px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
